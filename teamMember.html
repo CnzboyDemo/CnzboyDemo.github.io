@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>资源循环科学与工程 - 团队成员</title>
+		<!--网站图标-->
+		<link rel='icon' href='favicon.ico' type='image/x-ico' />
+		<!--核心CSS、JS-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+    	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="layer/layer.js"></script>
+	</head>
+	<body>
+		<div class="container"></div>
+			<!--头信息-->
+			<div id="top" style="margin-left: 4%; margin-right: 4%;height: 70px;">
+				<div style="float: left; width: 64px; height: 64px;">
+					<img style="width:64px;height:64px" src="img/logo.png" alt="logo">
+				</div>
+				<div style="margin-left: 80px;">
+					<h2 style="color: #28905a;"><strong>资源循环科学与工程</strong></h2>
+					<h5 style="color: #000;">Resource Recycling Science & Engineering</h5>
+				</div>
+			</div>
+			
+			<!--导航栏-->
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+		  			</button>
+		  			<a disabled="true" class="navbar-brand">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+				</div>
+				<div class="container-fluid">
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+					        <li><a href="index.html"><strong style="font-size: large;">首页 </strong><span class="sr-only">(current)</span></a> </li>
+					        <li><a href="education.html" style="font-size: medium;">教育教学 </a></li>
+					        <li class="active"><a href="teamMember.html" style="font-size: medium;">团队成员 </a></li>
+					        <li><a href="researchField.html" style="font-size: medium;">研究领域 </a></li>
+					        <li><a href="cooperation.html" style="font-size: medium;">创新合作 </a></li>
+					        <li class="dropdown">
+					          	<a href="contactUs.html" style="font-size: medium;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我们 <span class="caret"></span></a>
+					          	<ul class="dropdown-menu">
+						            <li><a href="contactUs.html">校友信息 </a></li>
+						            <li><a target="_blank" href="https://weibo.com/u/6116510549">微博 </a></li>
+						            <li><a id="wechat">公众号 </a></li>
+				          		</ul>
+				        	</li>
+			      		</ul>
+			    	</div>
+			  	</div>
+			</nav>
+			
+			<!--正文内容-->
+			<!--教师介绍-->
+			<div id="info" style="margin-left: 2%; margin-right: 4%; height: 140px;">
+				<h3 align="center" style="border-bottom-color: #000000;"><strong>教师介绍</strong></h3>
+				<hr />
+				<p style="letter-spacing: 2px; text-indent: 40px; font-size: 16px;">
+					<h4>教师介绍内容正在火速补充中...</h4>
+				</p>
+			</div>
+			
+			<!--空隙-->
+			<div style="height: 20px;"></div>
+			
+			<!--微信公众号图片-->
+			<div id="wechatImg" style="display: none;">
+				<img src="img/wechat-qcode.jpg" />		
+			</div>
+			
+			<!--版权信息-->
+			<div class="panel">
+				<div style="background-color: #28905a;" class="panel-footer">
+					<footer style="text-align: center; color: white;">
+							Copyright &copy; 2017 资源循环科学与工程
+					</footer>
+				</div>
+			</div>
+		</div>
+		
+	    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	    <script type="text/javascript">
+		   <!--弹出微信公众号-->
+			$('#wechat').on('click', function(){
+				layer.open({
+				  type: 1,
+				  title: false,
+				  closeBtn: 0,
+				  skin: 'layui-layer-nobg', //没有背景色
+				  shadeClose: true,
+				  content: $("#wechatImg")
+				});
+			});
+	    </script>
+	</body>
+</html>

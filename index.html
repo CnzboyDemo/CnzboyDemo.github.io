@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>资源循环科学与工程 - 首页</title>
+		<!--网站图标-->
+		<link rel='icon' href='favicon.ico' type='image/x-ico' />
+		<!--核心CSS、JS-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+    	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="layer/layer.js"></script>
+	</head>
+	<body>
+		<div class="container"></div>
+			<!--头信息-->
+			<div id="top" style="margin-left: 4%; margin-right: 4%;height: 70px;">
+				<div style="float: left; width: 64px; height: 64px;">
+					<img style="width:64px;height:64px" src="img/logo.png" alt="logo">
+				</div>
+				<div style="margin-left: 80px;">
+					<h2 style="color: #28905a;"><strong>资源循环科学与工程</strong></h2>
+					<h5 style="color: #000;">Resource Recycling Science & Engineering</h5>
+				</div>
+			</div>
+			
+			<!--导航栏-->
+			<nav class="navbar navbar-default navbar-static-top">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+		  			</button>
+		  			<a disabled="true" class="navbar-brand">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+				</div>
+				<div class="container-fluid">
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+					        <li class="active"><a href="index.html"><strong style="font-size: large;">首页 </strong><span class="sr-only">(current)</span></a> </li>
+					        <li><a href="education.html" style="font-size: medium;">教育教学 </a></li>
+					        <li><a href="teamMember.html" style="font-size: medium;">团队成员 </a></li>
+					        <li><a href="researchField.html" style="font-size: medium;">研究领域 </a></li>
+					        <li><a href="cooperation.html" style="font-size: medium;">创新合作 </a></li>
+					        <li class="dropdown">
+					          	<a href="contactUs.html" style="font-size: medium;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我们 <span class="caret"></span></a>
+					          	<ul class="dropdown-menu">
+						            <li><a href="contactUs.html">校友信息 </a></li>
+						            <li><a target="_blank" href="https://weibo.com/u/6116510549">微博 </a></li>
+						            <li><a id="wechat">公众号 </a></li>
+				          		</ul>
+				        	</li>
+			      		</ul>
+			    	</div>
+			  	</div>
+			</nav>
+	
+			<!--轮播图-->
+			<div id="myCarousel" style="margin-top: -20px;" class="carousel slide">
+				<!-- 轮播指标 -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>   
+				<!-- 轮播图片 -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/carousel.jpg" alt="First slide">
+					</div>
+					<div class="item">
+						<img src="img/carousel.jpg" alt="Second slide">
+					</div>
+					<div class="item">
+						<img src="img/carousel.jpg" alt="Third slide">
+					</div>
+				</div>
+				<!-- 轮播导航 -->
+				<a class="carousel-control left" href="#myCarousel" 
+				   data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#myCarousel" 
+				   data-slide="next">&rsaquo;</a>
+			</div>
+			
+			<!--空隙-->
+			<div style="height: 20px;"></div>
+	
+			<!--按钮组-->
+			<div class="btn-group-vertical" style="margin-left: 25px; height: 90px;">
+				<button id="btn_info" type="button" class="btn btn-success" onclick="
+					$('#news').css('display','none');
+					$('#info').css('display','block');
+					
+					$('#btn-news').removeClass('active');
+					$('#btn-info').addClass('active');
+					">专业简介</button>
+				<button id="btn_news" type="button" class="btn btn-success" onclick="
+					$('#info').css('display','none');
+					$('#news').css('display','block');
+					
+					$('#btn-info').removeClass('active');
+					$('#btn-news').addClass('active');
+					">新闻资讯</button>
+			</div>
+			
+			<!--正文内容-->
+			<div style="margin-left: 115px; margin-top: -110px; border-left: solid 1px green;">
+				<!--专业介绍-->
+				<div id="info" style="margin-left: 2%; margin-right: 4%;">
+					<h3 align="center" style="border-bottom-color: #000000;"><strong>专业介绍</strong></h3>
+					<hr />
+					<p style="letter-spacing: 2px; text-indent: 40px; font-size: 16px;">
+						资源循环科学与工程学科是一门交叉学科，涉及环境工程、化学工程与工艺、应用化学、材料工程、机械制造及其自动化、电子信息工程等多个学科。主要研究废弃物资源再生利用技术、关键机械零部件再制造、再生材料的性能和应用、节能减排效益分析等相关资源循环的科学和技术问题，是国家鼓励发展的战略性新兴产业急需的新兴学科，对于建设资源节约型和环境友好型社会具有重要意义。本学科也是江苏省和长三角地区经济社会发展急需的支撑学科。
+					</p>
+				</div>
+				
+				<!--新闻资讯-->
+				<div id="news" style="display: none; margin-left: 2%; margin-right: 4%;">
+					<h3 align="center" style="border-bottom-color: #000000;"><strong>新闻资讯</strong></h3>
+					<hr />
+					<div class="row">
+						<div class="col-sm-4">
+							<div style="margin: 3%;">
+								<img src="img/news2.jpg" class="img-responsive" alt="图片加载异常">
+								<div class="caption" style="margin-top: 2%;">
+									<strong>全国各地将大幅度提高垃圾处理费排污费&nbsp; <button onclick="alert('正在建设中...')" class="btn btn-success btn-xs">更多</button></strong>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div style="margin: 3%;">
+								<img src="img/news3.jpg" class="img-responsive" alt="图片加载异常">
+								<div class="caption" style="margin-top: 2%;">
+									<strong>如何获得健康饮水&nbsp; <button onclick="alert('正在建设中...')" class="btn btn-success btn-xs">更多</button></strong>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div style="margin: 3%;">
+								<img src="img/news4.jpg" class="img-responsive" alt="图片加载异常">
+								<div class="caption" style="margin-top: 2%;">
+									<strong>苹果供应商工厂涉嫌偷排废水 松江河道污染&nbsp; <button onclick="alert('正在建设中...')" class="btn btn-success btn-xs">更多</button></strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			
+			<!--空隙-->
+			<div style="height: 20px;"></div>
+			
+			<!--微信公众号图片-->
+			<div id="wechatImg" style="display: none;">
+				<img src="img/wechat-qcode.jpg" />		
+			</div>
+			
+			<!--版权信息-->
+			<div class="panel">
+				<div style="background-color: #28905a;" class="panel-footer">
+					<footer style="text-align: center; color: white;">
+							Copyright &copy; 2017 资源循环科学与工程
+					</footer>
+				</div>
+			</div>
+		</div>
+		
+	    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	    <script type="text/javascript">
+		   <!--弹出微信公众号-->
+			$('#wechat').on('click', function(){
+				layer.open({
+				  type: 1,
+				  title: false,
+				  closeBtn: 0,
+				  skin: 'layui-layer-nobg', //没有背景色
+				  shadeClose: true,
+				  content: $("#wechatImg")
+				});
+			});
+	    </script>
+	</body>
+</html>
